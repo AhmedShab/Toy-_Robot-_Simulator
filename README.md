@@ -92,4 +92,4 @@ To run the test, run `npm test` and it will run everything. Should fail one test
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/AhmedShab/Toy_Robot_Simulator/blob/master/LICENSE/) file for details
