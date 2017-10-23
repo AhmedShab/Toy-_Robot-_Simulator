@@ -29,7 +29,9 @@ REPORT
 
 The toy robot cannot fall off the table during movement. This also includes the inital placement of the toy robot. Any move that would cause the robot to fall will be ignored.
 
-### Text file format example
+### Input Format
+
+Your file should start with `place` command follows by one space than the position. All the other commands are valid after placing the robot on the table.
 
 Your file should look like the following examples:
 
@@ -47,6 +49,12 @@ LEFT
 MOVE
 REPORT
 ```
+
+### Output Format
+
+After the reading all the commands, `report` will display the result as `Output: x, y, direction`. For example, the result from the above example will output `Output: 0, 1, NORTH` and `Output: 3, 3, NORTH `
+
+The first example, it started at position 0, 0 North. Then just moved one step. The second one moved twice then turned left (North) and another step. Thus, the new position is 3, 3, North.
 
 ### Getting Started
 
