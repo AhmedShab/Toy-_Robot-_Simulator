@@ -9,12 +9,11 @@ const fileReader = () => {
 
       try {
         contents = fs.readFileSync(file);
+        return contents.toString();
 
       } catch (err) {
-        throw err.message;
+        console.log('Please provide a correct file input');
       }
-
-      return contents.toString();
     },
   };
 };

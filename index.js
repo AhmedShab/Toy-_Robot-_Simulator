@@ -8,11 +8,15 @@ const { readFile } = fileReader();
 const runSimulator = () => {
   console.log('starting the game');
 
-  let fileContents = readFile(process.argv[2]).toUpperCase().split('\n');
+  try {
+    let fileContents = readFile(process.argv[2]).toUpperCase().split('\n');
 
-  fileContents.forEach(command => {
-    parser.eval(command.trim());
-  });
+    fileContents.forEach(command => {
+      parser.eval(command.trim());
+    });
+  } catch (err) {
+    console.log(err.message);
+  }
 };
 
 runSimulator();
