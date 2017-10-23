@@ -1,14 +1,14 @@
 # Toy Robot Simulator
 
-A command line robot simulator written in Javascript (Node.js).
+A command line robot simulator is written in Javascript (Node.js).
 
 ## Description
 
-* The applicaton is a simulaton of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
-* There are no other obstructons on the table surface.
-* The robot is free to roam around the surface of the table, but must be prevented from falling to destructon. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
+* The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
+* There are no other obstructions on the table surface.
+* The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
-* The applicaton can read the following commands:
+* The application can read the following commands:
 
 ```
 PLACE X,Y,F
@@ -17,21 +17,23 @@ LEFT
 RIGHT
 REPORT
 ```
-* `PLACE` will put the toy robot on the table in positon X,Y and facing NORTH, SOUTH, EAST or WEST.
+* `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
 
-* `MOVE` will move the toy robot one unit forward in the directon it is currently facing.
+* `MOVE` will move the toy robot one unit forward in the direction it is currently facing.
 
-* `LEFT` and `RIGHT` will rotate the robot 90 degrees in the specified directon without changing the positon of the robot.
+* `LEFT` and `RIGHT` will rotate the robot 90 degrees in the specified direction without changing the positon of the robot.
 
 * `REPORT` will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
 ### Constraints
 
-The toy robot cannot fall off the table during movement. This also includes the inital placement of the toy robot. Any move that would cause the robot to fall will be ignored.
+The toy robot cannot fall off the table during movement. This also includes the initial placement of the toy robot. Any move that would cause the robot to fall will be ignored.
 
 ### Input Format
 
 Your file should start with `place` command follows by one space than the position. All the other commands are valid after placing the robot on the table.
+
+The `test.txt` is provided for you. You can also create your own file input.
 
 Your file should look like the following examples:
 
