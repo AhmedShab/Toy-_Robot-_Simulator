@@ -11,8 +11,6 @@ const parser = () => {
     let y = parseInt(placeCommand[1]);
     let direction = placeCommand[2];
 
-    // console.log(placeCommand);
-
     try {
       board.isValidPosition({ x, y });
       robot.setIsPlaced(true);
@@ -23,7 +21,6 @@ const parser = () => {
   };
 
   const evalMove = () => {
-
     try {
       board.isValidPosition(robot.state());
       robot.move(robot.getDirection());
@@ -43,7 +40,6 @@ const parser = () => {
   };
 
   const evalReport = () => {
-
     console.log(robot.report());
   };
 
@@ -80,11 +76,23 @@ const parser = () => {
           break;
 
         case allCommands.LEFT:
-          evalLeft();
+          try {
+            board.isRobotOnBoard(robot.getIsPlaced());
+            evalLeft();
+          } catch (err) {
+            console.log(err.message);
+          }
+
           break;
 
         case allCommands.RIGHT:
-          evalRight();
+          try {
+            board.isRobotOnBoard(robot.getIsPlaced());
+            evalRight();
+          } catch (err) {
+            console.log(err.message);
+          }
+
           break;
 
         case allCommands.REPORT:

@@ -52,7 +52,6 @@ const robot = () => {
   };
 
   const robotAction = (type) => {
-
     const callback = {
       NORTH: () => {
         return _y === 4 ? 4 : _y++;
@@ -97,14 +96,12 @@ const robot = () => {
     },
 
     place: (x, y, direction) => {
-
       _x = x;
       _y = y;
       _direction = direction;
     },
 
     move: (direction) => {
-
       robotAction(direction);
     },
 
