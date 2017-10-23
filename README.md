@@ -17,11 +17,11 @@ LEFT
 RIGHT
 REPORT
 ```
-* `PLACE` will put the toy robot on the table in posi8on X,Y and facing NORTH, SOUTH, EAST or WEST.
+* `PLACE` will put the toy robot on the table in positon X,Y and facing NORTH, SOUTH, EAST or WEST.
 
-* `MOVE` will move the toy robot one unit forward in the direc8on it is currently facing.
+* `MOVE` will move the toy robot one unit forward in the directon it is currently facing.
 
-* `LEFT` and `RIGHT` will rotate the robot 90 degrees in the specified directon without changing the posi8on of the robot.
+* `LEFT` and `RIGHT` will rotate the robot 90 degrees in the specified directon without changing the positon of the robot.
 
 * `REPORT` will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
