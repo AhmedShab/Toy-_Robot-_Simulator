@@ -16,7 +16,7 @@ describe('Testing robot actions', () => {
   });
 
   describe('An invalid placement on the table', () => {
-    it('should throws an error since we are placing the robot in the wrong postion', () => {
+    it('should throws an error since we are placing the robot in the wrong position', () => {
       place(0, 5, 'NORTH');
 
       assert.ifError(isValidPosition(state()));
@@ -24,7 +24,7 @@ describe('Testing robot actions', () => {
   });
 
   describe('Move the robot North', () => {
-    it('should return a new postion from 1,0 to 0, 4', () => {
+    it('should return a new position from 1,0 to 0, 4', () => {
       const expacted = 'Output 1, 4, NORTH';
       place(1, 0, 'NORTH');
       for (let i = 0; i < 4; i++) {
